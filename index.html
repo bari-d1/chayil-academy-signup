@@ -63,11 +63,25 @@
     .note{text-align:center;font-size:12px;color:var(--muted);margin-top:12px}
     footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
     @media(max-width:640px){.grid{grid-template-columns:1fr}}
+
+    .brand-logo{
+  width:180px;           /* tweak size here */
+  height:auto;
+  display:block;
+  margin:0 auto 14px;    /* centers above heading */
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.35));
+}
+@media (max-width:480px){
+  .brand-logo{ width:104px; }
+}
+
   </style>
 </head>
 <body>
   <div class="page">
+    <img class="brand-logo" src="assets/logo.png" alt="Chayil Academy" />
     <main class="card" id="top">
+
       <h1>Join Chayil Academy</h1>
       <p class="sub">Build strength, confidence, and skill through coding.</p>
 
