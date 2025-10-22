@@ -71,10 +71,14 @@
       <h1>Join Chayil Academy</h1>
       <p class="sub">Build strength, confidence, and skill through coding.</p>
 
-      <form action="https://oluwad1bomi.getform.com/2n2dw" method="POST" accept-charset="UTF-8">
-        <input type="hidden" name="_subject" value="New Chayil Academy Onboarding Submission" />
-        <input type="hidden" name="_redirect" value="thank-you.html" />
-        <input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" />
+      <form action="https://formsubmit.co/oluwad1bomi@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Chayil Academy Onboarding Submission">
+        <input type="hidden" name="_next" value="thank-you.html">          <!-- where to redirect after submit -->
+        <input type="hidden" name="_captcha" value="false">                <!-- skip their default captcha -->
+        <input type="hidden" name="_template" value="table">               <!-- cleaner email layout -->
+        <input type="hidden" name="_autoresponse" value="Thanks for joining Chayil Academy. We will contact you soon to confirm your weekly slot and first assignment.">
+        <input type="text" name="_honey" style="display:none">             <!-- honeypot to reduce spam -->
+        
 
         <div class="grid">
           <div>
@@ -172,6 +176,8 @@
         </div>
 
         <button class="btn" type="submit">Submit and get started</button>
+        <input type="hidden" name="_autoresponse" value="Thanks for joining Chayil Academy. We will contact you to confirm your slot.">
+
         <p class="note">Need help? Email oluwad1bomi@gmail.com</p>
       </form>
 
