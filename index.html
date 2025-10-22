@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chayil Academy • Onboarding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg-deep:#0a0f13; --bg-grad1:#0f1620; --bg-grad2:#0b1223;
+      --ink:#e9eef2; --muted:#9ba7b3;
+      --accent:#00c2a8; --accent-2:#42e8d4;
+      --card:#0f1a22; --card-2:#11242b;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    /* let the page be taller than the viewport when needed */
+    html,body{min-height:100%}
+    body{
+      margin:0;
+      /* remove flex centering so the page can start at true top */
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(0,194,168,0.10), transparent 60%),
+        radial-gradient(900px 500px at 0% 100%, rgba(66,232,212,0.08), transparent 60%),
+        linear-gradient(180deg, var(--bg-grad1), var(--bg-grad2));
+      background-color:var(--bg-deep);
+      color:var(--ink);
+      font-family:"Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.5;
+    }
+
+    /* page container */
+    .page{padding:40px 20px}
+
+    .card{
+      width:100%;
+      max-width:760px;
+      margin:40px auto; /* centers the card and keeps a top offset */
+      background:linear-gradient(180deg,var(--card), var(--card-2));
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:20px;
+      box-shadow:0 18px 50px rgba(0,0,0,0.35);
+      padding:34px 28px;
+    }
+    h1{text-align:center;font-size:32px;margin:0 0 6px}
+    p.sub{text-align:center;color:var(--muted);margin:0 0 22px}
+    label{display:block;font-weight:700;margin:6px 0 6px}
+    input[type="text"],input[type="email"],input[type="tel"],textarea,select{
+      width:100%;padding:12px 14px;border-radius:12px;
+      background:#0b1720;border:1px solid rgba(255,255,255,0.08);
+      color:var(--ink);outline:none;
+    }
+    textarea{min-height:100px;resize:vertical}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .inline{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+    .btn{
+      display:block;width:100%;margin-top:20px;
+      padding:14px 18px;border:none;border-radius:12px;
+      background:linear-gradient(180deg,var(--accent),var(--accent-2));
+      color:#041017;font-weight:900;font-size:15px;cursor:pointer;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+    .note{text-align:center;font-size:12px;color:var(--muted);margin-top:12px}
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="card" id="top">
+      <h1>Join Chayil Academy</h1>
+      <p class="sub">Build strength, confidence, and skill through coding.</p>
+
+      <form action="https://oluwad1bomi.getform.com/2n2dw" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="New Chayil Academy Onboarding Submission" />
+        <input type="hidden" name="_redirect" value="thank-you.html" />
+        <input type="text" name="_gotcha" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" />
+
+        <div class="grid">
+          <div>
+            <label for="name">Full name</label>
+            <input id="name" name="Full name" type="text" required />
+          </div>
+          <div>
+            <label for="dob">Age </label>
+            <input id="dob" name="Age" type="text" placeholder="16" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="Email" type="email" required />
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="Phone" type="tel" />
+          </div>
+        </div>
+
+        <label for="city">City and country</label>
+        <input id="city" name="City and Country" type="text" placeholder="Manchester, United Kingdom" />
+
+        <div class="grid">
+          <div>
+            <label for="status">Current status</label>
+            <select id="status" name="Current status" required>
+              <option value="">Select one</option>
+              <option>Secondary school student, Year 11–13</option>
+              <option>University student</option>
+              <option>Working professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="experience">Experience level</label>
+            <select id="experience" name="Experience level" required>
+              <option value="">Select one</option>
+              <option>Complete beginner</option>
+              <option>Some experience</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="goals">What do you hope to achieve?</label>
+        <textarea id="goals" name="Goals" placeholder="Career change, build a project, strengthen problem-solving..."></textarea>
+
+        <label>Areas of interest</label>
+        <div class="inline" role="group" aria-label="Areas of interest">
+          <label><input type="checkbox" name="Areas of interest" value="Web Development" /> Web Development</label>
+          <label><input type="checkbox" name="Areas of interest" value="Python Programming" /> Python Programming</label>
+          <label><input type="checkbox" name="Areas of interest" value="Data Analysis" /> Data Analysis</label>
+          <label><input type="checkbox" name="Areas of interest" value="Not sure yet" /> Not sure yet</label>
+        </div>
+
+        <div class="grid">
+          <div>
+            <label for="times">Preferred weekly slot (include time zone)</label>
+            <input id="times" name="Preferred time" type="text" placeholder="7PM, UK time" />
+          </div>
+          <div>
+            <label for="days">Preferred day</label>
+            <select id="days" name="Preferred days">
+              <option>Monday</option><option>Tuesday</option><option>Wednesday</option>
+              <option>Thursday</option><option>Friday</option><option>Saturday</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div>
+            <label for="device">Do you have a laptop/computer?</label>
+            <select id="device" name="Has computer">
+              <option>Yes</option><option>No, I need help</option>
+            </select>
+          </div>
+          <div>
+            <label for="net">Internet quality</label>
+            <select id="net" name="Internet quality">
+              <option>Strong and reliable</option><option>Fair</option><option>Unstable</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="Additional notes" placeholder="Accessibility needs, ideal project type, questions..."></textarea>
+
+        <div class="inline" style="margin-top:8px">
+          <label><input type="checkbox" name="Consent to contact" required /> I agree to be contacted about my lessons</label>
+        </div>
+        <div class="inline">
+          <label><input type="checkbox" name="Privacy acknowledged" required /> I understand my data is used only to schedule lessons</label>
+        </div>
+
+        <button class="btn" type="submit">Submit and get started</button>
+        <p class="note">Need help? Email oluwad1bomi@gmail.com</p>
+      </form>
+
+      <footer>
+        Brought to you by Dayo Adebari • Chayil Academy
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>
